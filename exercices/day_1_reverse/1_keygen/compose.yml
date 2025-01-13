@@ -1,0 +1,17 @@
+services:
+  challenge:
+    build: .
+    labels:
+      - "traefik.enable=true"
+      - "traefik.tcp.routers.day1keygen.rule=HostSNI(`keygen.serviel.fr`)"
+      - "traefik.tcp.routers.day1keygen.entrypoints=CTFtcp"
+      - "traefik.tcp.services.day1keygen.loadbalancer.server.port=1337"
+      - "traefik.tcp.routers.day1keygen.service=day1keygen"
+      - "traefik.tcp.routers.day1keygen.tls.certresolver=myresolver"
+    networks:
+      - traefik
+
+
+networks:
+  traefik:
+    external: true
