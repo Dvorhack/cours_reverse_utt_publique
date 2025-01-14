@@ -1,0 +1,18 @@
+---
+services:
+  challenge:
+    build: .
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.tcp.routers.bankrupst.rule=HostSNI(`bankrupst.serviel.fr`)"
+      - "traefik.tcp.routers.bankrupst.entrypoints=CTFtcp"
+      - "traefik.tcp.services.bankrupst.loadbalancer.server.port=4000"
+      - "traefik.tcp.routers.bankrupst.service=bankrupst"
+      - "traefik.tcp.routers.bankrupst.tls.certresolver=myresolver" 
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true
