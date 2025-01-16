@@ -1,0 +1,1 @@
+J'ai fait quelques modifications dans la commande `ping`, vous m'en direz des nouvelles !
