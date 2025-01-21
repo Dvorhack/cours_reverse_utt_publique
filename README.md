@@ -12,7 +12,7 @@
 | day_1_reverse -> [0_hello_world](exercices/day_1_reverse/0_hello_world)  |  ❌  |
 | day_1_reverse -> [1_keygen](exercices/day_1_reverse/1_keygen)  |  ✅  |
 | ctf -> [SSP_2](exercices/ctf/SSP_2)  |  ❌  |
-| ctf -> [reverse_1](exercices/ctf/reverse_1)  |  ❌  |
+| ctf -> [reverse_1](exercices/ctf/reverse_1)  |  ✅  |
 | ctf -> [binaire_exigent](exercices/ctf/binaire_exigent)  |  ❌  |
 | ctf -> [botnet](exercices/ctf/botnet)  |  ✅  |
 | ctf -> [kernel_backdoor](exercices/ctf/kernel_backdoor)  |  ❌  |
