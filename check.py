@@ -26,7 +26,6 @@ template = f"""
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
-
 """
 
 for name, done in challenges.items():
