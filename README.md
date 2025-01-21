@@ -16,7 +16,7 @@
 | ctf -> [binaire_exigent](exercices/ctf/binaire_exigent)  |  ❌  |
 | ctf -> [botnet](exercices/ctf/botnet)  |  ✅  |
 | ctf -> [kernel_backdoor](exercices/ctf/kernel_backdoor)  |  ❌  |
-| ctf -> [reverse_4](exercices/ctf/reverse_4)  |  ❌  |
+| ctf -> [reverse_4](exercices/ctf/reverse_4)  |  ✅  |
 | ctf -> [SSP_1](exercices/ctf/SSP_1)  |  ❌  |
 | ctf -> [pong](exercices/ctf/pong)  |  ✅  |
 | day_3_malware -> [2_malware](exercices/day_3_malware/2_malware)  |  ✅  |
