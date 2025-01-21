@@ -1,0 +1,22 @@
+services:
+  easy-syscall:
+    container_name: easy-syscall
+    build: . # Dockerfile location
+    # ports:
+    #   - "1337:1337" # EXTERNAL_PORT:INTERNAL_PORT
+    restart: always # Always restart the container if it stops
+    cap_drop:
+      - ALL
+    labels:
+      - "traefik.enable=true"
+      - "traefik.tcp.routers.kernel.rule=HostSNI(`kernel.serviel.fr`)"
+      - "traefik.tcp.routers.kernel.entrypoints=CTFtcp"
+      - "traefik.tcp.services.kernel.loadbalancer.server.port=1337"
+      - "traefik.tcp.routers.kernel.service=kernel"
+      - "traefik.tcp.routers.kernel.tls.certresolver=myresolver" 
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true

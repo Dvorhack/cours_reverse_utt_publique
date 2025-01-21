@@ -1,0 +1,55 @@
+#!/busybox /bin/sh
+
+/busybox chown 0:0 -R /
+/busybox mkdir /home
+/busybox mkdir /home/user
+/busybox mkdir /proc
+/busybox mkdir /sys
+/busybox mkdir /tmp
+
+/busybox chown 1000 /home/user
+/busybox mount -t proc none /proc
+/busybox mount -t sysfs none /sys
+/busybox mount -t tmpfs tmpfs /tmp
+/busybox mount -t devtmpfs devtmpfs /dev
+/busybox mdev -s
+/busybox mkdir -p /dev/pts
+/busybox mount -vt devpts -o gid=4,mode=620 none /dev/pts
+/busybox chmod 666 /dev/ptmx
+/busybox chmod 777 /dev/null
+/busybox chmod 777 /dev/random
+/busybox chmod 777 /dev/urandom
+/busybox chmod 777 /dev/zero
+# Maybe dangerous but write needed for pwntools
+/busybox chmod 777 /dev/tty*
+
+/busybox insmod /modules/netfs.ko
+/busybox insmod /modules/9pnet.ko
+/busybox insmod /modules/9p.ko
+/busybox insmod /modules/9pnet_fd.ko
+/busybox insmod /modules/9pnet_virtio.ko
+/busybox insmod /backdoor.ko
+
+/busybox mkdir /bin
+/busybox mount -t 9p -o trans=virtio,access=client bin /bin -oversion=9p2000.L
+/busybox mkdir /usr
+/busybox mount -t 9p -o trans=virtio,access=client,cache=loose usr /usr -oversion=9p2000.L
+# /busybox mkdir /var
+# /busybox mount -t 9p -o trans=virtio var /var -oversion=9p2000.L
+/busybox mkdir /etc
+/busybox mkdir /etc/alternatives
+/busybox mount -t 9p -o trans=virtio alternatives /etc/alternatives -oversion=9p2000.L
+/busybox ln -s /usr/lib /lib
+/busybox ln -s /usr/lib32 /lib32
+/busybox ln -s /usr/lib64 /lib64
+/busybox ln -s /usr/libx32 /libx32
+
+cd /home/user
+export PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PS1='\w \$ '
+export HOME='/home/user'
+tput smam
+echo "Welcome to the challenge VM with nano/vim/gcc/clang/python"
+/busybox setsid /busybox /bin/cttyhack /busybox setuidgid 1000 /busybox /bin/sh
+# /busybox setsid /busybox /bin/cttyhack /busybox setuidgid 0 /busybox /bin/sh
+/busybox poweroff

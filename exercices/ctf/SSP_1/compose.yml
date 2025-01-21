@@ -1,0 +1,18 @@
+---
+services:
+  challenge:
+    build: .
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.tcp.routers.ssp.rule=HostSNI(`ssp.serviel.fr`)"
+      - "traefik.tcp.routers.ssp.entrypoints=CTFtcp"
+      - "traefik.tcp.services.ssp.loadbalancer.server.port=1337"
+      - "traefik.tcp.routers.ssp.service=ssp"
+      - "traefik.tcp.routers.ssp.tls.certresolver=myresolver" 
+    networks:
+      - traefik
+
+networks:
+  traefik:
+    external: true

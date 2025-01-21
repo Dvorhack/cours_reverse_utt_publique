@@ -1,0 +1,4 @@
+all: target
+
+target:
+	# nothing
