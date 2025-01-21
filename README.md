@@ -6,7 +6,7 @@
 | Challenge Name  | Have Writeup |
 | ------------- | ------------- |
 | day_2_vuln_re -> [1_loose_lottery](exercices/day_2_vuln_re/1_loose_lottery)  |  ✅  |
-| day_2_vuln_re -> [2_zoo_de_pointeurs_sauvages](exercices/day_2_vuln_re/2_zoo_de_pointeurs_sauvages)  |  ✅  |
+| day_2_vuln_re -> [2_zoo_de_pointeurs_sauvages](exercices/day_2_vuln_re/2_zoo_de_pointeurs_sauvages)  |  ❌  |
 | day_2_vuln_re -> [6_bankrupst](exercices/day_2_vuln_re/6_bankrupst)  |  ✅  |
 | day_1_reverse -> [2_aaargs](exercices/day_1_reverse/2_aaargs)  |  ✅  |
 | day_1_reverse -> [0_hello_world](exercices/day_1_reverse/0_hello_world)  |  ❌  |
