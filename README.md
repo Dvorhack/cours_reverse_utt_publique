@@ -18,7 +18,7 @@
 | ctf -> [botnet](exercices/ctf/botnet)  |  ✅  |
 | ctf -> [kernel_backdoor](exercices/ctf/kernel_backdoor)  |  ❌  |
 | day_1_reverse -> [2_aaargs](exercices/day_1_reverse/2_aaargs)  |  ✅  |
-| day_1_reverse -> [0_hello_world](exercices/day_1_reverse/0_hello_world)  |  ❌  |
+| day_1_reverse -> [0_hello_world](exercices/day_1_reverse/0_hello_world)  |  ✅  |
 | day_1_reverse -> [1_keygen](exercices/day_1_reverse/1_keygen)  |  ✅  |
 | day_2_vuln_re -> [1_loose_lottery](exercices/day_2_vuln_re/1_loose_lottery)  |  ✅  |
 | day_2_vuln_re -> [6_bankrupst](exercices/day_2_vuln_re/6_bankrupst)  |  ✅  |
