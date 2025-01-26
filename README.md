@@ -9,10 +9,10 @@
 | day_3_malware -> [4_VM](exercices/day_3_malware/4_VM)  |  ✅  |
 | day_3_malware -> [1_simplekill](exercices/day_3_malware/1_simplekill)  |  ✅  |
 | day_3_malware -> [3_packer](exercices/day_3_malware/3_packer)  |  ✅  |
-| ctf -> [SSP_2](exercices/ctf/SSP_2)  |  ❌  |
+| ctf -> [SSP_2](exercices/ctf/SSP_2)  |  ✅  |
 | ctf -> [reverse_1](exercices/ctf/reverse_1)  |  ✅  |
 | ctf -> [pong](exercices/ctf/pong)  |  ✅  |
-| ctf -> [SSP_1](exercices/ctf/SSP_1)  |  ❌  |
+| ctf -> [SSP_1](exercices/ctf/SSP_1)  |  ✅  |
 | ctf -> [binaire_exigent](exercices/ctf/binaire_exigent)  |  ❌  |
 | ctf -> [reverse_4](exercices/ctf/reverse_4)  |  ✅  |
 | ctf -> [botnet](exercices/ctf/botnet)  |  ✅  |
