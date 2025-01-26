@@ -6,7 +6,7 @@
 | Challenge Name  | Have Writeup |
 | ------------- | ------------- |
 | day_3_malware -> [2_malware](exercices/day_3_malware/2_malware)  |  ✅  |
-| day_3_malware -> [4_VM](exercices/day_3_malware/4_VM)  |  ❌  |
+| day_3_malware -> [4_VM](exercices/day_3_malware/4_VM)  |  ✅  |
 | day_3_malware -> [1_simplekill](exercices/day_3_malware/1_simplekill)  |  ✅  |
 | day_3_malware -> [3_packer](exercices/day_3_malware/3_packer)  |  ✅  |
 | ctf -> [SSP_2](exercices/ctf/SSP_2)  |  ❌  |
