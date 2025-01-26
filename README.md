@@ -16,7 +16,7 @@
 | ctf -> [binaire_exigent](exercices/ctf/binaire_exigent)  |  ❌  |
 | ctf -> [reverse_4](exercices/ctf/reverse_4)  |  ✅  |
 | ctf -> [botnet](exercices/ctf/botnet)  |  ✅  |
-| ctf -> [kernel_backdoor](exercices/ctf/kernel_backdoor)  |  ❌  |
+| ctf -> [kernel_backdoor](exercices/ctf/kernel_backdoor)  |  ✅  |
 | day_1_reverse -> [2_aaargs](exercices/day_1_reverse/2_aaargs)  |  ✅  |
 | day_1_reverse -> [0_hello_world](exercices/day_1_reverse/0_hello_world)  |  ✅  |
 | day_1_reverse -> [1_keygen](exercices/day_1_reverse/1_keygen)  |  ✅  |
